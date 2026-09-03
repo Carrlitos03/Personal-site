@@ -170,7 +170,6 @@ Interest Cards
 
 .interest-card p {
     font-size: 16px;
-    color: #aeb8c0;
 }
 
 /* ------------------------------
@@ -207,15 +206,15 @@ Skills
 your skills improve. */
 
 .html {
-    width: 75%;
+    width: 35%;
 }
 
 .css {
-    width: 65%;
+    width: 40%;
 }
 
-.responsive {
-    width: 50%;
+.java {
+    width: 20%;
 }
 
 .problem-solving {
