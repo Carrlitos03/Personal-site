@@ -1,0 +1,284 @@
+/* ------------------------------
+Basic Page Styles
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101820;
+    color: #f1f3f4;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+Navigation
+------------------------------ */
+
+header {
+    background-color: #0b1116;
+    border-bottom: 1px solid #52606b;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #d7dce0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #aeb8c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* ------------------------------
+Hero Section
+------------------------------ */
+
+.hero {
+max-width: 1200px;
+margin: 0 auto;
+padding: 120px 30px 140px;
+}
+
+.eyebrow {
+color: #7fa6bd;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+.hero h2 {
+font-size: clamp(50px, 9vw, 110px);
+line-height: 0.95;
+letter-spacing: -4px;
+margin-bottom: 35px;
+}
+
+.hero h2 span {
+color: #9daab3;
+}
+
+.hero-text {
+max-width: 600px;
+font-size: 20px;
+color: #b8c1c7;
+}
+
+/* ------------------------------
+Main Sections
+------------------------------ */
+
+.content-section {
+    border-top: 1px solid #52606b;
+    padding: 80px 30px;
+}
+
+.content-section.alternate {
+    background-color: #d9dde0;
+    color: #101820;
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+}
+
+.section-number {
+    color: #7893a3;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-content {
+    max-width: 900px;
+}
+
+.section-content h2 {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 35px;
+    letter-spacing: -2px;
+}
+
+.section-content p {
+    max-width: 700px;
+    color: #b8c1c7;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.alternate .section-content p {
+    color: #37444d;
+}
+
+/* ------------------------------
+Interest Cards
+------------------------------ */
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.interest-card {
+    background-color: #18232c;
+    color: #f1f3f4;
+    padding: 30px;
+    min-height: 220px;
+    border-top: 4px solid #7893a3;
+}
+
+.interest-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.interest-card p {
+    font-size: 16px;
+    color: #aeb8c0;
+}
+
+/* ------------------------------
+Skills
+------------------------------ */
+
+.skills-list {
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill > span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #d7dce0;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #303c45;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #8fa6b4;
+}
+
+/* Change these percentages as
+your skills improve. */
+
+.html {
+    width: 75%;
+}
+
+.css {
+    width: 65%;
+}
+
+.responsive {
+    width: 50%;
+}
+
+.problem-solving {
+    width: 80%;
+}
+
+/* ------------------------------
+Footer
+------------------------------ */
+
+footer {
+    border-top: 1px solid #52606b;
+    background-color: #0b1116;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #87939c;
+    font-size: 14px;
+}
+
+/* ------------------------------
+Mobile Design
+------------------------------ */
+
+@media (max-width: 700px) {
+
+ 
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-links {
+    gap: 15px;
+}
+
+.hero {
+    padding: 80px 25px 100px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    letter-spacing: -2px;
+}
+
+.content-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 60px 25px;
+}
+
+.section-content h2 {
+    font-size: 42px;
+}
+
+.interest-grid {
+    grid-template-columns: 1fr;
+}
+
+footer {
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+
+}
